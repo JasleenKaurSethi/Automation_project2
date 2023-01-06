@@ -3,7 +3,7 @@ if [ ! -f $CRON_FILE ]
 then
         echo "cron file for root doesnot exist, creating.."
         touch $CRON_FILE
-        echo "* * * * * root /root/Automation_Project/automation.sh" >> $CRON_FILE
+        echo "* * * * * root /root/Automation_Project2/automation.sh" >> $CRON_FILE
 	chmod 600 /etc/cron.d/automation
 fi
 s3_bucket="task2-s3bucket"
